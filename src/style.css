@@ -10,28 +10,21 @@ body{
 	color: #333333;
 	background-color: #fefefe;
 }
-/* .grid-container{
-	display: grid;
-	grid-gap: 24px;
-	grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(50px, auto);
-	grid-template-areas: 
-		'header header header'
-		'main main main'
-		'col1 col2 col3'
-		'footer footer footer';
-	justify-content: center;
-	align-content: start;
-	background-color: aqua;
-} */
+div {
+	outline: 1px solid red;
+	padding: 10px;
+}
 header{
 	min-height: 33vh;
+	max-width: 100vw;
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Arvo', Georgia, 'Times New Roman', serif;
+	margin: 10px 0;
 }
 h1{
 	font-size: 200%;
+	line-height: 110%;
 	font-weight: bold;
 }
 h2{
@@ -41,25 +34,59 @@ h2{
 h3{
 	font-size: 120%;
 }
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	max-width: 100vw;
+	overflow: hidden;
+	padding: 10px;
+}
+p{
+	display: block;
+}
+.intro{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	max-width: 66vw;
+}
 .profile{
 	display: flex;
+	max-width: 33vw;
 	flex-direction: column;
 	justify-content: space-around;
 }
 .profile img{
 	border: 3px solid var(--bs-light);
 	border-radius: 50%;
+	margin-top: 10px;
 }
-.profile ul, .profile li {
+.profile ul {
 	list-style: none;
 	padding: 0;
 }
+.profile li {
+	list-style: none;
+	padding: 10px 5px;
+	width: 100%;
+	max-width: 30px;
+	height: auto;
+	max-height: 30px;
+	border: 0;
+	border-radius: 50%;
+	background-color: #f2f2f2;
+	text-align: center;
+}
+.deck {
+	text-transform: uppercase;
+}
 .social-follow{
 	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
 }
 .social-buttons {
-	border: 0;
-	border-radius: 50px;
-	background-color: var(--bs-gray);
 	color: var(--bs-light);
 }

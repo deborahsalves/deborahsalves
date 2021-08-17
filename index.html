@@ -7,81 +7,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Déborah Salves – Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Arvo|Lato" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="./src/style.css" type="text/css" rel="stylesheet" </head>
-
+    <link href="./node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <!-- <script defer src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script> -->
+    <link href="./src/style.css" type="text/css" rel="stylesheet">
+</head> 
 <body>
-    <div class="container-fluid">
-        <header class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Menu</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            <div class="intro col-8">
-                <h1>Déborah Salves</h1>
-                <p><span class="deck">Front-end developer junior</span> Career transition after 15 years in Journalism.
-                   <!-- Experience with HTML, CSS, Marketing tools, CMS, and news reporting and editting. --></p>
-            </div>
-            <div class="profile col-4">
-                    <img src="./src/images/profile-pic-deborah-salves1.jpg" width="100%" height="auto" title="Déborah Salves" alt="profile picture of Déborah Salves" />
-                    <ul class="social-follow col-12">
-                        <li></li><a class="btn btn-primary btn-lg btn-floating social-buttons" href="https://www.linkedin.com/in/deborahsalves/" role="button">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a></li>
-                        <li></li><a class="btn btn-primary btn-lg btn-floating social-buttons" href="https://github.com/deborahsalves" role="button">
-                            <i class="fab fa-github"></i>
-                        </a></li>
-                        <li></li><a class="btn btn-primary btn-lg btn-floating social-buttons" href="mailto:salves.deborah@gmail.com" role="button">
-                            <i class="fab fa-envelope"></i>
-                        </a></li>
-                    </ul>
-            </div>
-        </header>
-        <main>
-            <section id="contact" class="contact-form">
-                <form>
-                    <label for="name">Name:</label>
-                    <input id="name" name="name" type="text" />
-                    <label for="email">Email:</label>
-                    <input id="email" name="email" type="email" />
-                    <label for="message">Ask away!</label>
-                    <textarea id="message" name="message" rows="4" cols="40">Get in touch with me here or at your social
-                        media of choice ;)</textarea>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <nav class="navbar navbar-light bg-light">
-                <form class="form-inline">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-              </nav>
-        </footer>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#soft">Soft skills</a></li>
+        <li><a href="#stacks">Hard skills</a></li>
+        <li><a href="#idioms">Idioms</a></li>
+        <li><a href="#academic">Academic</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="intro">
+        <h1>Déborah Salves</h1>
+          <p><span class="deck">Junior Front-end developer</span><br/>
+          Career transition after 15 years in Journalism.
+            <!-- Experience with HTML, CSS, Marketing tools, CMS, and news reporting and editting. --></p>
+      </div>
+      <div class="profile">
+        <img src="./src/images/profile-pic-deborah-salves1.jpg" width="100%" height="auto" title="Déborah Salves" alt="profile picture of Déborah Salves" />
+          <ul class="social-follow">
+            <li>
+              <a class="btn social-buttons" href="https://www.linkedin.com/in/deborahsalves/" target="_blank role="button">
+                <i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a class="btn social-buttons" href="https://github.com/deborahsalves" target="_blank role="button">
+                <i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a class="btn social-buttons" href="mailto:salves.deborah@gmail.com" target="_blank role="button">
+                <i class="fas fa-envelope"></i></a>
+            </li>
+          </ul>
+      </div>
     </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+  </header>
+  <main>
+    <section id="soft" class="skills">
+      <h2>Soft skills</h2>
+      <div id="communication" class="skills">
+        <p>Communication</p>
+        <div class="likert">Proficient</div>
+      </div>
+      <div id="assertiveness" class="skills">
+        <p>Assertiveness</p>
+        <div class="likert">Proficient</div>
+      </div>
+      <div id="problem-solving" class="skills">
+        <p>problem-solving</p>
+        <div class="likert">Advanced</div>
+      </div>
+      <div id="leadership" class="skills">
+        <p>Leadership</p>
+        <div class="likert">Intermediate</div>
+      </div>
+      <div id="team-work" class="skill">
+        <p>Team work</p>
+        <div class="likert">Advanced</div>
+      </div>
+      <div id="time-management" class="skill">
+        <p>Time management</p>
+        <div class="likert">Advanced</div>
+      </div>
+    </section>
+    <section id="stacks" class="stacks">
+      <h2>Hard skills</h2>
+      <div id="stacks-html">
+        <p>HTML</p>
+        <div class="likert">Advanced</div>
+      </div>
+      <div id="stacks-css">
+          <p>CSS</p>
+          <div class="likert">Advanced</div>
+        </div>
+      <div id="stacks-js">
+          <p>JavaScript</p>
+          <div class="likert">Beginner</div>
+      </div>
+      <div id="stacks-wordpress">
+        <p>WordPress</p>
+        <div class="likert">Intermediate</div>
+      </div>
+      <div id="stacks-php">
+            <p>php</p>
+            <div class="likert">Beginner</div>
+        </div>
+        <div id="stacks-react">
+            <p>React</p>
+            <div class="likert">Beginner</div>
+        </div>
+        <div id="stacks-indd">
+          <p>Adobe InDesign</p>
+          <div class="likert">Advanced</div>
+      </div>
+    </section>
+    <section id="idioms" class="lang">
+      <h2>Idioms</h2>
+      <div id="lang-en">
+        <p>English</p>
+        <div class="likert">C2</div>
+      </div>
+      <div id="lang-de">
+        <p>German</p>
+        <div class="likert">B1</div>
+      </div>
+      <div id="lang-es">
+        <p>Spanish</p>
+        <div class="likert">B1</div>
+      </div>
+      <div id="lang-pt">
+        <p>Brazilian Portuguese</p>
+        <div class="likert">C2 (native speaker)</div>
+      </div>
+    </section>
+    <section id="academic">
+      <h2>Academic</h2>
+      <div id="masters">
+        <h3>Linguistics</h3>
+        <p>UFRGS (BR) – 2021</p>
+      </div>
+      <div id="grad">
+        <h3>Digital Journalism</h3>
+        <p>PUCRS (BR) – 2012</p>
+      </div>
+      <div id="bachelor">
+        <h3>Journalism</h3>
+        <p>UFSC (BR) – 2010</p>
+      </div>
+    </section>
+    <section id="contact" class="contact-form">
+      <h2>Contact</h2>
+      <address>
+        <ul>
+          <li><a href="mailto:salves.deborah@gmail.com" title="Email me">Email: salves.deborah@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/deborahsalves/" target="_blank" title="Check my LinkedIn profile">LinkedIn: /deborahsalves</a></li>
+        </ul>
+      </address>
+      <form>
+          <label for="name">Name:</label>
+          <input id="name" name="name" type="text"/><br/>
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="email" /><br/>
+          <label for="message">Ask away!</label>
+          <textarea id="message" name="message" rows="4" cols="40">Get in touch with me here or at your social
+              media of choice ;)</textarea>
+      </form>
+    </section>
+  </main>
+  <footer>
+  </footer>
 </body>
 
 </html>
