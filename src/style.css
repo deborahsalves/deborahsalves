@@ -36,6 +36,7 @@ h2{
 }
 h3{
 	font-size: 120%;
+	font-weight: normal;
 }
 .container{
 	display: flex;
@@ -151,7 +152,7 @@ header .container{
 	border-left: 4px solid #DD9707;
 	padding: 10px 6px;
 }
-.skill, .stack, .langs{
+.skill, .stack, .langs, .academic{
 	display: flex;
 	flex-flow: row;
 	flex-wrap: wrap;
@@ -159,7 +160,18 @@ header .container{
 	width: 100%;
 	padding: 10px;
 }
-.langs h2{
+.skills{
+	background-image: linear-gradient(135deg, #F9F6EEff, #FFF5EEcc);
+	/* background-image: linear-gradient(135deg, #F9F6EEff, #ff0000cc); */
+}
+.stacks{
+	background-image: linear-gradient(225deg, #FFF5EEcc, #F9F6EEff);
+	/* background-image: linear-gradient(225deg, #FF0000cc, #F9F6EEff); */
+}
+.langs{
+	background-color: #F0EAD6;
+}
+.langs h2, .academic h2{
 	width: 100vw;
 }
 .lang {
@@ -183,4 +195,91 @@ header .container{
 .level{
 	padding: 5px;
 	font-weight: bold;
+}
+.academic{
+	justify-content: flex-start;
+}
+.academic h3{
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.academic div {
+	display: flex;
+	width: 100%;
+}
+.degree, .institution {
+	width: 50%;
+	flex-flow: column;
+	justify-content: flex-end;
+	padding: 10px;
+}
+.institution p{
+	text-align: end;
+}
+.degree-title{
+	font-size: 75%;
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
+/**** FOOTER ****/
+footer{
+	display: block;
+	width: 100vw;
+	max-width: 100vw;
+	overflow: hidden;
+	background-image: linear-gradient(225deg, #DD9707ff, #DD9707cc);
+}
+footer h2{
+	border-left: 4px solid #fefefe;
+	padding: 10px 6px;
+}
+footer ul{
+	display: flex;
+	max-width: 100vw;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	justify-content: space-between;
+	align-content: space-between;
+	align-items: center;
+}
+footer li{
+	display: inline-flex;
+	list-style: none;
+	border: 1px solid red;
+}
+footer li a{
+	font-size: 66%;
+	text-decoration: none;
+	padding: 5px 10px;
+	color: #333333;
+}
+footer i{
+	min-width: 20px;
+	min-height: 20px;
+	max-width: 20px;
+	max-height: 20px;
+	padding: 5px 0;
+	margin-right: 5px;
+	text-align: center;
+	border-radius: 50%;
+	color: #DD9707;
+	background-color: #fefefe;
+}
+footer li a:hover{
+	color: #333333;
+	background-color: #DD9707;
+}
+footer form{
+	margin: 10px auto;
+	padding: 10px;
+}
+.form-identification{
+	display: flex;
+	justify-content: space-between;
+}
+form input[type=text], input[type=email]{
+	width: 33%;
+	max-width: 33%;
 }
