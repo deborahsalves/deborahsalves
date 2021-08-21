@@ -42,7 +42,7 @@ h3{
 	display: flex;
 	flex-flow: column;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: flex-start;
 	max-width: 100vw;
 	overflow: hidden;
@@ -62,6 +62,7 @@ nav{
 	z-index: 10;
 	width: 100vw;
 	max-width: 100vw;
+	height: 32px;
 	max-height: 40px;
 	overflow: hidden;
 	background-image: linear-gradient(90deg, #fefefe, #fefefebb);
@@ -93,7 +94,7 @@ nav li a:hover{
 }
 
 header .container{
-	margin-top: 40px;
+	margin-top: 32px;
 	padding: 20px;
 	padding-bottom: 10px;
 	flex-flow: row;
@@ -104,6 +105,7 @@ header .container{
 .intro{
 	display: flex;
 	flex-direction: column;
+	flex: 4 1 50vw; 
 	justify-content: space-around;
 	max-width: 66vw;
 }
@@ -112,12 +114,13 @@ header .container{
 }
 .profile{
 	display: flex;
+	flex: 1 4 33vw; 
 	max-width: 33vw;
 	flex-direction: column;
 	justify-content: space-around;
 }
 .profile img{
-	border: 3px solid var(--bs-light);
+	border: 3px solid #fefefe;
 	border-radius: 50%;
 	margin-top: 10px;
 }
@@ -288,4 +291,283 @@ form input[type=text], input[type=email]{
 }
 form textarea{
 	width: 99%;
+}
+
+/**** MEDIA QUERIES ****/
+
+@media only screen and (min-width: 361px) and (max-width: 768px) {
+	body{
+		line-height: 1.4em;
+	}
+	div {
+		/* outline: 1px solid red; */
+	}
+	h1{
+		font-size: 300%;
+		line-height: 120%;
+	}
+	h2{
+		font-size: 200%;
+	}
+	
+	/*** HEADER ***/
+	nav ul{
+		margin: auto 0;
+	}
+	nav li a{
+		font-size: 75%;
+		padding: 5px;
+		margin:auto;
+		color: #9D6A06;
+	}
+	nav li a:hover{
+		color: #333333;
+		background-color: #DD9707;
+	}
+	header .container{
+		margin-top: 32px;
+		padding: 20px;
+		padding-bottom: 10px;
+		flex-flow: row;
+		background-image: linear-gradient(135deg, #DD9707ff, #DD9707cc);
+		color: #fefefe;
+	}
+	.intro{
+		flex: 4 1 66vw; 
+		justify-content: space-around;
+		max-width: 75vw;
+	}
+	.profile{
+		flex: 1 4 25vw; 
+		max-width: 25vw;
+	}
+	.profile img{
+		border: 4px solid #fefefe;
+	}
+	.profile li {
+		padding: 10px;
+		max-width: 45px;
+		max-height: 45px;
+	}
+	li i {
+		font-size: 150%;
+	}
+	
+	/**** SKILLSETS ****/
+	.skills h2, .stacks h2, .langs h2, .academic h2{
+		border-left: 6px solid #DD9707;
+		padding: 20px 12px;
+	}
+	.lang p{
+		font-size: 100%;
+	}
+	.level{
+		font-size: 150%;
+	}
+	
+	/**** FOOTER ****/
+	footer{
+		display: block;
+		width: 100vw;
+		max-width: 100vw;
+		overflow: hidden;
+		background-image: linear-gradient(225deg, #DD9707ff, #DD9707cc);
+	}
+	footer h2{
+		border-left: 6px solid #fefefe;
+		padding: 20px 12px;
+	}
+	address{
+		width: 100%;
+	}
+	footer ul{
+		margin-bottom: 20px;
+		justify-content: space-around;
+	}
+	footer li a{
+		font-size: 100%;
+	}
+	footer i{
+		padding: 10px;
+		min-width: 45px;
+		min-height: 45px;
+		max-width: 45px;
+		max-height: 45px;
+		margin-right: 5px;
+	}
+	footer form{
+		width: 90%;
+		margin: 10px auto;
+		padding: 10px;
+	}
+	form input[type=text], input[type=email]{
+		width: 40%;
+		max-width: 40%;
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	body{
+		line-height: 1.5em;
+	}
+	div {
+		/* outline: 1px solid red; */
+	}
+	h1{
+		font-size: 300%;
+		line-height: 150%;
+	}
+	h2{
+		font-size: 200%;
+	}
+	/*** HEADER ***/
+	nav{
+		height: 45px;
+		max-height: 45px;	
+	}
+	nav ul{
+		padding: 0 4%;
+	}
+	nav li{
+		height: 45px;
+	}
+	nav li a{
+		font-size: 100%;
+	}
+	header .container{
+		margin-top: 45px;
+		padding: 20px 10%;
+		padding-bottom: 20px;
+	}
+	.intro{
+		flex: 4 1 75vw; 
+		justify-content: space-around;
+		max-width: 85vw;
+	}
+	.profile{
+		flex: 1 4 25vw; 
+		max-width: 15vw;
+	}
+	.profile img{
+		border: 5px solid #fefefe;
+	}
+	.profile li {
+		padding: 10px;
+		max-width: 45px;
+		max-height: 45px;
+	}
+	li i {
+		font-size: 150%;
+	}
+	/**** SKILLSETS ****/
+	.skills, .stacks, .langs, .academic{
+		padding: 20px 10%;
+	}
+	.skills h2, .stacks h2, .langs h2, .academic h2{
+		width: 100vw;
+		border-left: 6px solid #DD9707;
+		padding: 20px 12px;
+	}
+	.skills, .stacks{
+		display: flex;
+		flex-flow: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.skill, .stack{
+		display: inline-flex;
+		width: 45%;
+		padding: 20px;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.lang {
+		display: inline-flex;
+		width: 30%;
+		padding: 20px;
+		margin-bottom: 20px;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.lang img{
+		min-width: 25%;
+		max-width: 25%;
+		height: auto;
+		max-height: 15%;
+		margin-right: 10px;
+		border-radius: 50%;
+	}	
+	.lang p{
+		font-size: 100%;
+	}
+	.level{
+		font-size: 150%;
+	}
+	.academic{
+		justify-content: space-between;
+		align-items: stretch;
+	}
+	.academic div {
+		width: 45%;
+	}
+	.degree{
+		width: 40% !important;
+		padding: 20px;
+	} 
+	.institution {
+		width: 60% !important;
+		padding: 20px;
+	}
+	.degree{
+		justify-content: flex-start;
+	}
+	.institution{
+		justify-content: center;
+	}
+	.institution p{
+		font-size: 100%;
+	}
+	/**** FOOTER ****/
+	footer{
+		padding: 20px 10%;
+	}
+	footer h2{
+		border-left: 6px solid #fefefe;
+		padding: 20px 12px;
+	}
+	address{
+		margin: 20px auto;
+		width: 100%;
+	}
+	footer ul{
+		margin-bottom: 20px;
+		justify-content: space-around;
+	}
+	footer li{
+		width: 33%;
+	}
+	footer li a{
+		font-size: 110%;
+	}
+	footer i{
+		font-size: 150%;
+		padding: 10px;
+		min-width: 45px;
+		min-height: 45px;
+		max-width: 45px;
+		max-height: 45px;
+		margin-right: 5px;
+	}
+	footer form{
+		width: 90%;
+		margin: 10px auto;
+		padding: 20px;
+	}
+	form input[type=text], input[type=email]{
+		width: 40%;
+		max-width: 40%;
+	}
+	form textarea{
+		margin-top: 6px;
+	}
 }
