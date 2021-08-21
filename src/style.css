@@ -247,7 +247,7 @@ footer ul{
 footer li{
 	display: inline-flex;
 	list-style: none;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 footer li a{
 	font-size: 66%;
@@ -282,4 +282,10 @@ footer form{
 form input[type=text], input[type=email]{
 	width: 33%;
 	max-width: 33%;
+}
+.form-message{
+	margin-top: 10px;
+}
+form textarea{
+	width: 99%;
 }
