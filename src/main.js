@@ -36,7 +36,7 @@ const rateSkill = (likert) => {
             likert = 2;
             break;
         case 'Beginner':
-            likert = 0;
+            likert = 1;
             break;
     }
     return likert;
@@ -65,3 +65,4 @@ const getSkill = (skillsNodes) => {
 }
 
 getSkill(skillsNodes)
+getSkill(stacksNodes)
